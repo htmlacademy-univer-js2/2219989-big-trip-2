@@ -11,10 +11,10 @@ module.exports = {
     // Путь до директории (важно использовать path.resolve):
     path: path.resolve(__dirname, 'build'),
     // Имя файла со сборкой:
-    filename: 'bundle.js'
+    filename: 'bundle.js',
     clean: true,
     },
-  devtool: 'source-map'
+  devtool: 'source-map',
   plugins: [
     new CopyPlugin({
       patterns: [{ from: 'public' }],
