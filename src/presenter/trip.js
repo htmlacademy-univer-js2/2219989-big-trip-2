@@ -56,10 +56,12 @@ export default class TripEventsPresenter {
       }
     };
 
-    pointComponent.setEditClickHandler(() => {
+    const handleEditClick =() => {
       replacePointToEditForm();
       document.addEventListener('keydown', onEscKeyDown);
-    });
+    };
+
+    pointComponent.setEditClickHandler(handleEditClick);
 
     editPointComponent.setPreviewClickHandler(() => {
       replaceEditFormToPoint();
