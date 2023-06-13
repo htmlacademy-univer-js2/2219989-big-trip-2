@@ -43,7 +43,7 @@ const Point = {
   FLIGHT: 'flight',
   CHECK_IN: 'check-in',
   SIGHTSEEING: 'sightseeing',
-  RESTAURANT: 'restaurant'
+  RESTAURANT: 'restaurant',
 };
 
 const PointDescription = {
@@ -55,13 +55,15 @@ const PointDescription = {
   [Point.FLIGHT]: 'Flight',
   [Point.CHECK_IN]: 'Check-in',
   [Point.SIGHTSEEING]: 'Sightseeing',
-  [Point.RESTAURANT]: 'Restaurant'
+  [Point.RESTAURANT]: 'Restaurant',
 };
 
 
 const ApiServiceResponse = {
   GET: 'GET',
   PUT: 'PUT',
+  POST: 'POST',
+  DELETE: 'DELETE',
 };
 
 export { SortTypesOff, FilterType, SortType, UserAction, UpdateType, SortTypeDescription, Point, PointDescription, ApiServiceResponse };
