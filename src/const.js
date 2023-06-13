@@ -1,5 +1,3 @@
-const SortTypesOff = ['event', 'offer'];
-
 const FilterType = {
   EVERYTHING: 'everything',
   FUTURE: 'future',
@@ -7,9 +5,9 @@ const FilterType = {
 };
 const SortType = {
   DAY: 'day',
+  EVENT: 'event',
   TIME: 'time',
   PRICE: 'price',
-  EVENT: 'event',
   OFFER: 'offer',
 };
 
@@ -24,14 +22,6 @@ const UpdateType = {
   MINOR: 'MINOR',
   MAJOR: 'MAJOR',
   INIT: 'INIT',
-};
-
-const SortTypeDescription = {
-  [SortType.DAY]: 'Day',
-  [SortType.EVENT]: 'Event',
-  [SortType.TIME]: 'Time',
-  [SortType.PRICE]: 'Price',
-  [SortType.OFFER]: 'Offer',
 };
 
 const Point = {
@@ -66,4 +56,4 @@ const ApiServiceResponse = {
   DELETE: 'DELETE',
 };
 
-export { SortTypesOff, FilterType, SortType, UserAction, UpdateType, SortTypeDescription, Point, PointDescription, ApiServiceResponse };
+export { FilterType, SortType, UserAction, UpdateType, Point, PointDescription, ApiServiceResponse };
